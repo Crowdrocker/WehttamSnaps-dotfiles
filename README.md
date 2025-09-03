@@ -1,3 +1,4 @@
+
 # WehttamSnaps Dotfiles 🎮📸
 
 > **"Capturing Gaming Moments"**  
@@ -38,3 +39,163 @@ git clone https://github.com/Crowdrocker/WehttamSnaps-dotfiles.git ~/.dotfiles
 ~/.dotfiles/setup/post-install.sh
 
 # Reboot and enjoy!
+```
+
+> 💡 **Note**: This script assumes a fresh Arch install with `yay` or `paru` installed.
+
+---
+
+## 📂 Structure
+
+| Folder       | Purpose |
+|------------|--------|
+| `config/hypr/`     | Modular Hyprland configs (keybinds, rules, monitors) |
+| `config/eww/`      | EWW widgets, SCSS, scripts (bar, launchers, powermenu) |
+| `scripts/`         | System, gaming, OBS, and utility scripts |
+| `themes/`          | GTK, icons, and cursor themes |
+| `setup/`           | Post-install automation |
+
+---
+
+## 🎮 Gaming Setup
+
+- **Steam**: Native + Gamemode
+- **Heroic (Epic)**: Flatpak or native
+- **Lutris**: For GOG, Origin, etc.
+- **SteamTinkerLaunch**: For modding (Vortex/MO2)
+- **Gamescope**: For FSR upscaling
+- **MangoHud**: In-game overlay
+
+Example launch command:
+```bash
+gamescope -w 1920 -h 1080 -f -- gamemoderun heroic launch "Cyberpunk 2077"
+```
+
+---
+
+## 📸 Creative Workflow
+
+- **Darktable** – RAW photo editing
+- **GIMP** – Image manipulation
+- **Krita** – Digital painting
+- **OBS Studio** – Streaming & recording
+- **Thunar** – Fast file management
+
+---
+
+## 📺 Streaming Tools
+
+- **OBS Studio** + **obs-cli** for scene switching
+- **Discord** – Voice & community
+- **Brave** – Private browsing
+- **Spotify** – Background music
+
+Switch OBS scenes from EWW:
+```bash
+~/.config/eww/scripts/obs-scene.sh "Gaming"
+```
+
+---
+
+## 🛠️ Maintenance
+
+| Script | Purpose |
+|-------|--------|
+| `scripts/system/update-system.sh` | Update system + Flatpaks |
+| `scripts/system/themeswitcher.sh` | Toggle dark/light mode |
+| `scripts/gaming/launch-cyberpunk.sh` | Launch with Gamescope |
+| `scripts/utils/fancontrol-setup.sh` | Auto fan curve |
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork, customize, and share!  
+Open issues for bugs or feature requests.
+
+---
+
+## 📸 Preview
+
+![WehttamSnaps Screenshot](preview.png)
+
+---
+
+## 📜 License
+
+MIT License – Do whatever you want, just give credit if you share.
+
+---
+
+## 🙌 Shoutout
+
+Inspired by **JaKooLit**, improved for **gaming, streaming, and photography**.
+
+---
+
+## 📬 Contact
+
+- **Twitch**: [twitch.tv/wehttamsnaps](https://twitch.tv/wehttamsnaps)
+- **GitHub**: [@Crowdrocker](https://github.com/Crowdrocker)
+
+---
+
+🔥 **WehttamSnaps – Where photography meets gaming, beautifully.**
+```
+
+---
+
+## ✅ Step 3: Add `post-install.sh`
+
+Create: `~/.dotfiles/setup/post-install.sh`
+
+```bash
+#!/bin/bash
+# WehttamSnaps Post-Install Script
+# Run after Arch base install
+
+echo "🚀 Installing WehttamSnaps..."
+
+# Update system
+sudo pacman -Syu --noconfirm
+
+# Install helpers
+sudo pacman -S --noconfirm git base-devel
+git clone https://aur.archlinux.org/yay.git /tmp/yay
+cd /tmp/yay && makepkg -si --noconfirm
+
+# Install core
+yay -S --noconfirm hyprland xdg-desktop-portal-hyprland eww-wayland ags-git \
+  pipewire pipewire-pulse wireplumber mako grim slurp \
+  waybar wlogout neovim zsh starship \
+  noto-fonts noto-fonts-emoji ttf-jetbrains-mono-nerd \
+  sweet-dark-theme-git papirus-icon-theme-git bibata-cursor-theme-bin \
+  sddm sddm-sugar-candy-theme grub2-theme-vimix \
+  networkmanager iwd dhcpcd \
+  gamemode-git gamescope-git vkbasalt-git mangohud-git \
+  steam-native com.heroicgameslauncher.hgl lutris \
+  darktable gimp krita obs-studio discord brave-bin spotify-launcher \
+  zram-generator
+
+# Enable services
+sudo systemctl enable sddm NetworkManager iwd pipewire pipewire-pulse wireplumber
+
+# Copy configs
+cp -r ~/.dotfiles/config/* ~/.config/
+cp -r ~/.dotfiles/themes/* ~/.themes/
+
+# Make scripts executable
+chmod +x ~/.dotfiles/scripts/**.sh
+chmod +x ~/.dotfiles/scripts/**/*.sh
+
+# Set shell
+chsh -s /bin/zsh wehttamsnaps
+
+# Done
+echo "✅ WehttamSnaps installed! Reboot to start."
+```
+Tag: `@hyprwm`, `@JaKooLit`, `@EliverLara`
+
+---
+
+---
