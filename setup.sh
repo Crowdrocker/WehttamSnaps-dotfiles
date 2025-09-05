@@ -91,6 +91,362 @@ msg() {
     esac
 }
 
+# ----------------------------------------------------------
+# Ask if the user wants to update the mirrorlist
+# ----------------------------------------------------------
+
+info_message "Do you want to update the mirrorlist to use the 10 best servers of your country? (y/n, default:y): "
+read mirror_choice
+mirror_choice=${mirror_choice:-y}
+
+if [[ "$mirror_choice" == "y" ]]; then
+  sudo pacman -S --needed --noconfirm reflector rsync
+  while true; do
+    clear
+    info_message "Specify your country (country name):"
+    read country_choice
+    
+    if reflector --list-countries 2>/dev/null | grep -qi "^${country_choice}"; then
+      info_message "Updating mirrorlist for $country_choice..."
+      if sudo reflector --country "$country_choice" --latest 10 --sort rate --save /etc/pacman.d/mirrorlist; then
+        success_message "Mirrorlist updated successfully!"
+        break
+      else
+        error_message "Error updating mirrorlist. Please try again."
+        sleep 1
+      fi
+    else
+      error_message "'$country_choice' is not a valid country name."
+      sleep 1
+      info_message "Would you like to try again? (y/n, default:y): "
+      read retry_choice
+      retry_choice=${retry_choice:-y}
+      if [[ "$retry_choice" != "y" ]]; then
+        info_message "Skipping mirrorlist update."
+        break
+      fi
+    fi
+  done
+fi
+
+sleep 1
+clear
+
+
+# ----------------------------------------------------------
+# Check if yay is installed. If not, installs it
+# ----------------------------------------------------------
+
+if command -v yay > /dev/null; then
+  success_message "yay is installed. Skipping installation"
+else
+  error_message "yay is not installed. Installing..."
+  sleep 1
+  sudo pacman -S --needed --noconfirm base-devel less
+  whereami=$(pwd)
+  git clone https://aur.archlinux.org/yay.git ~/Downloads/yay
+  cd ~/Downloads/yay
+  makepkg -si
+  cd $whereami
+  rm -rf ~/Downloads/yay
+  success_message "yay has been installed successfully"
+fi
+
+sleep 1
+clear
+
+
+# Enable Chaotic-AUR
+echo -e "${VIOLET}Setting up Chaotic-AUR...${NC}"
+if ! grep -q "chaotic-aur" /etc/pacman.conf; then
+    sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+    sudo pacman-key --lsign-key 3056513887B78AEB
+    sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.xz'
+    sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.xz'
+    
+    echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
+    sudo pacman -Syu
+fi
+
+# Core Hyprland packages
+HYPRLAND_CORE=(
+    "hyprland"
+    "hyprpaper" 
+    "hypridle"
+    "hyprlock"
+    "hyprpicker"
+    "hyprcursor"
+    "xdg-desktop-portal-hyprland"
+    "qt5-wayland"
+    "qt6-wayland"
+    "polkit-kde-agent"
+)
+
+# Window Manager & Desktop Environment
+WM_DE=(
+    "waybar"
+    "rofi-wayland" 
+    "fuzzel"
+    "dunst"
+    "mako"
+    "swww"
+    "grim"
+    "slurp"
+    "wl-clipboard"
+    "cliphist"
+    "brightnessctl"
+    "playerctl"
+    "pavucontrol"
+    "bluez"
+    "bluez-utils"
+    "blueman"
+    "network-manager-applet"
+)
+
+# Audio & Video
+AUDIO_VIDEO=(
+    "pipewire"
+    "pipewire-alsa" 
+    "pipewire-pulse"
+    "pipewire-jack"
+    "wireplumber"
+    "obs-studio"
+    "ffmpeg"
+    "mpv"
+    "vlc"
+)
+
+# File Management & System Tools
+FILE_SYSTEM=(
+    "thunar"
+    "thunar-volman"
+    "thunar-archive-plugin"
+    "thunar-media-tags-plugin"
+    "file-roller"
+    "ark"
+    "nemo"
+    "nemo-fileroller"
+    "gvfs"
+    "gvfs-mtp"
+    "udiskie"
+)
+
+# Terminal & Shell
+TERMINAL_SHELL=(
+    "kitty"
+    "alacritty"
+    "foot"
+    "zsh"
+    "zsh-completions"
+    "zsh-autosuggestions"
+    "zsh-syntax-highlighting"
+    "starship"
+    "eza"
+    "bat"
+    "fd"
+    "ripgrep"
+    "fzf"
+    "tree"
+    "neofetch"
+    "fastfetch"
+    "btop"
+    "htop"
+)
+
+# Development Tools
+DEVELOPMENT=(
+    "git"
+    "github-cli"
+    "neovim"
+    "vim"
+    "code"
+    "nodejs"
+    "npm"
+    "python"
+    "python-pip"
+    "rustup"
+    "go"
+    "docker"
+    "docker-compose"
+    "base-devel"
+    "cmake"
+    "ninja"
+)
+
+# Gaming & Multimedia
+GAMING=(
+    "steam"
+    "lutris"
+    "heroic-games-launcher-bin"
+    "mangohud"
+    "gamemode"
+    "gamescope"
+    "wine"
+    "winetricks"
+    "dxvk"
+    "lib32-vulkan-radeon"
+    "vulkan-radeon"
+    "lib32-mesa"
+    "mesa"
+    "xorg-xrandr"
+)
+
+# Photography & Creative Tools
+CREATIVE=(
+    "gimp"
+    "krita"
+    "inkscape"
+    "blender"
+    "kdenlive"
+    "audacity"
+    "darktable"
+    "rawtherapee"
+    "hugin"
+    "digikam"
+)
+
+# System & Hardware
+SYSTEM_HARDWARE=(
+    "lm_sensors"
+    "pwm-fan-control"
+    "ufw"
+    "cups"
+    "system-config-printer"
+    "hplip"
+    "sane"
+    "simple-scan"
+    "power-profiles-daemon"
+    "tlp"
+    "auto-cpufreq"
+    "thermald"
+)
+
+# Fonts & Themes
+FONTS_THEMES=(
+    "noto-fonts"
+    "noto-fonts-emoji"
+    "ttf-jetbrains-mono"
+    "ttf-fira-code"
+    "ttf-font-awesome"
+    "papirus-icon-theme"
+    "arc-gtk-theme"
+    "materia-gtk-theme"
+)
+
+# Browsers & Communication
+BROWSERS_COMM=(
+    "brave-bin"
+    "firefox"
+    "discord"
+    "telegram-desktop"
+    "thunderbird"
+    "zoom"
+)
+
+# AUR Packages
+AUR_PACKAGES=(
+    "eww"
+    "nwg-displays"
+    "nwg-drawer"
+    "nwg-dock"
+    "plymouth"
+    "plymouth-theme-arch-charge"
+    "sddm-sugar-candy-git"
+    "steamtinkerlaunch"
+    "vortex-mod-manager"
+    "mod-organizer-2"
+    "hyprshot"
+    "waybar-hyprland"
+    "rofi-bluetooth-git"
+    "wlogout"
+    "swaylock-effects"
+    "hyprland-autoname-workspaces"
+)
+
+# Install packages by category
+echo -e "${BLUE}Starting package installation...${NC}"
+
+install_packages "Hyprland Core" "${HYPRLAND_CORE[@]}"
+install_packages "Window Manager & Desktop" "${WM_DE[@]}"
+install_packages "Audio & Video" "${AUDIO_VIDEO[@]}"
+install_packages "File Management & System" "${FILE_SYSTEM[@]}"
+install_packages "Terminal & Shell" "${TERMINAL_SHELL[@]}"
+install_packages "Development Tools" "${DEVELOPMENT[@]}"
+install_packages "Gaming & Multimedia" "${GAMING[@]}"
+install_packages "Photography & Creative" "${CREATIVE[@]}"
+install_packages "System & Hardware" "${SYSTEM_HARDWARE[@]}"
+install_packages "Fonts & Themes" "${FONTS_THEMES[@]}"
+install_packages "Browsers & Communication" "${BROWSERS_COMM[@]}"
+
+install_aur_packages "AUR Packages" "${AUR_PACKAGES[@]}"
+
+# Enable services
+echo -e "${VIOLET}Enabling services...${NC}"
+sudo systemctl enable bluetooth
+sudo systemctl enable NetworkManager
+sudo systemctl enable cups
+sudo systemctl enable sddm
+sudo systemctl enable ufw
+
+# Configure UFW firewall
+echo -e "${VIOLET}Configuring UFW firewall...${NC}"
+sudo ufw --force enable
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# Setup AMD graphics optimizations
+echo -e "${VIOLET}Setting up AMD graphics optimizations...${NC}"
+echo 'RADV_PERFTEST=aco' | sudo tee -a /etc/environment
+echo 'AMD_VULKAN_ICD=RADV' | sudo tee -a /etc/environment
+echo 'RADV_DEBUG=zerovram' | sudo tee -a /etc/environment
+
+# Gaming optimizations
+echo -e "${VIOLET}Applying gaming optimizations...${NC}"
+echo 'vm.max_map_count=2147483642' | sudo tee /etc/sysctl.d/80-gamecompatibility.conf
+
+# Create ZRAM configuration
+echo -e "${VIOLET}Setting up ZRAM...${NC}"
+echo 'zram' | sudo tee /etc/modules-load.d/zram.conf
+echo 'options zram num_devices=1' | sudo tee /etc/modprobe.d/zram.conf
+
+# Configure shell
+echo -e "${VIOLET}Setting up ZSH shell...${NC}"
+chsh -s $(which zsh)
+
+# Create directories
+echo -e "${VIOLET}Creating directories...${NC}"
+mkdir -p ~/.config/{hypr,waybar,eww,rofi,kitty,dunst,swww}
+mkdir -p ~/.local/share/{applications,themes,icons}
+mkdir -p ~/Pictures/Wallpapers
+mkdir -p ~/Scripts
+mkdir -p ~/Gaming
+mkdir -p ~/Photography
+mkdir -p ~/Streaming
+
+# Mount gaming drive
+echo -e "${VIOLET}Setting up gaming drive mount...${NC}"
+sudo mkdir -p /run/media/wehttamsnaps/LINUXDRIVE-1
+echo "UUID=$(lsblk -no UUID /dev/disk/by-label/LINUXDRIVE-1) /run/media/wehttamsnaps/LINUXDRIVE-1 auto defaults,user,uid=1000,gid=1000 0 0" | sudo tee -a /etc/fstab
+
+# Install Flatpaks
+echo -e "${VIOLET}Setting up Flatpaks...${NC}"
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+FLATPAKS=(
+    "com.spotify.Client"
+    "com.github.tchx84.Flatseal" 
+    "org.videolan.VLC"
+    "com.obsproject.Studio"
+    "org.gimp.GIMP"
+    "org.kde.krita"
+    "org.inkscape.Inkscape"
+    "org.blender.Blender"
+)
+
+for app in "${FLATPAKS[@]}"; do
+    flatpak install -y flathub "$app" || echo -e "${YELLOW}Failed to install $app${NC}"
+done
+
 
 # Directories ----------------------------
 hypr_dir="$HOME/.hyprconf/hypr"
