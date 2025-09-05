@@ -1,7 +1,15 @@
 #!/bin/bash
 
-# Advanced Hyprland Installation Script by 
-# WehttamSnaps ( https://github.com/Crowdrocker/WehttamSnaps-dotfiles.git )
+# Advanced Hyprland Installation Script by
+# WehttamSnaps ( https://github.com/Crowdrocker/WehttamSnaps-dotfiles )
+echo -e "${VIOLET}"
+cat << "EOF"
+██     ██ ███████ ██   ██ ████████ ████████  █████  ███    ███ ███████ ███    ██  █████  ██████  ███████ 
+██     ██ ██      ██   ██    ██       ██    ██   ██ ████  ████ ██      ████   ██ ██   ██ ██   ██ ██      
+██  █  ██ █████   ███████    ██       ██    ███████ ██ ████ ██ ███████ ██ ██  ██ ███████ ██████  ███████ 
+██ ███ ██ ██      ██   ██    ██       ██    ██   ██ ██  ██  ██      ██ ██  ██ ██ ██   ██ ██           ██ 
+ ███ ███  ███████ ██   ██    ██       ██    ██   ██ ██      ██ ███████ ██   ████ ██   ██ ██      ███████ 
+EOF
 
 # color defination
 red="\e[1;31m"
