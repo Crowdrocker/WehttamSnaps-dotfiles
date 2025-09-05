@@ -33,10 +33,12 @@
 
 ```bash
 # Clone repo
-git clone https://github.com/Crowdrocker/WehttamSnaps-dotfiles.git ~/.dotfiles
+  git clone https://github.com/Crowdrocker/WehttamSnaps-dotfiles.git ~/Dotfiles
+  cd ~/Dotfiles
 
 # Run setup
-~/.dotfiles/setup/post-install.sh
+
+  ./install.sh
 
 # Reboot and enjoy!
 ```
