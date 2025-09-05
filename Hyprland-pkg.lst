@@ -1,549 +1,551 @@
-yay -S --noconfirm --needed 7zip
-yay -S --noconfirm --needed acpi
-yay -S --noconfirm --needed adobe-source-code-pro-fonts
-yay -S --noconfirm --needed adw-gtk-theme-git
-yay -S --noconfirm --needed alacritty
-yay -S --noconfirm --needed amd-ucode
-yay -S --noconfirm --needed amdvlk
-yay -S --noconfirm --needed antimicrox
-yay -S --noconfirm --needed appimagelauncher
-yay -S --noconfirm --needed arc-gtk-theme
-yay -S --noconfirm --needed arch-install-scripts
-yay -S --noconfirm --needed archlinux-keyring
-yay -S --noconfirm --needed ardour
-yay -S --noconfirm --needed ark
-yay -S --noconfirm --needed asusctl
-yay -S --noconfirm --needed audacious
-yay -S --noconfirm --needed audacity
-yay -S --noconfirm --needed autotiling
-yay -S --noconfirm --needed axel
-yay -S --noconfirm --needed aylurs-gtk-shell
-yay -S --noconfirm --needed azote
-yay -S --noconfirm --needed base
-yay -S --noconfirm --needed base-devel
-yay -S --noconfirm --needed bash-completion
-yay -S --noconfirm --needed bat
-yay -S --noconfirm --needed batsignal
-yay -S --noconfirm --needed bc
-yay -S --noconfirm --needed bibata-cursor-theme
-yay -S --noconfirm --needed bibata-cursor-theme-bin
-yay -S --noconfirm --needed blender
-yay -S --noconfirm --needed bluedevil
-yay -S --noconfirm --needed blueman
-yay -S --noconfirm --needed bluez
-yay -S --noconfirm --needed bluez-utils
-yay -S --noconfirm --needed bootconfig
-yay -S --noconfirm --needed brave-bin
-yay -S --noconfirm --needed breeze
-yay -S --noconfirm --needed breeze-plus
-yay -S --noconfirm --needed brightnessctl
-yay -S --noconfirm --needed btop
-yay -S --noconfirm --needed build
-yay -S --noconfirm --needed bzip3
-yay -S --noconfirm --needed cairomm
-yay -S --noconfirm --needed cava
-yay -S --noconfirm --needed celluloid
-yay -S --noconfirm --needed chaotic-keyring
-yay -S --noconfirm --needed chaotic-mirrorlist
-yay -S --noconfirm --needed clang
-yay -S --noconfirm --needed click
-yay -S --noconfirm --needed cliphist
-yay -S --noconfirm --needed cmake
-yay -S --noconfirm --needed cmus
-yay -S --noconfirm --needed code
-yay -S --noconfirm --needed corectrl
-yay -S --noconfirm --needed coreutils
-yay -S --noconfirm --needed cups
-yay -S --noconfirm --needed cups-pdf
-yay -S --noconfirm --needed curl
-yay -S --noconfirm --needed darkly-bin
-yay -S --noconfirm --needed darktable
-yay -S --noconfirm --needed ddcutil
-yay -S --noconfirm --needed dhcpcd
-yay -S --noconfirm --needed dialog
-yay -S --noconfirm --needed digikam
-yay -S --noconfirm --needed discord
-yay -S --noconfirm --needed docker
-yay -S --noconfirm --needed docker-compose
-yay -S --noconfirm --needed dosfstools
-yay -S --noconfirm --needed dracula-grub-theme-git
-yay -S --noconfirm --needed dunst
-yay -S --noconfirm --needed dxvk-bin
-yay -S --noconfirm --needed efibootmgr
-yay -S --noconfirm --needed efitools
-yay -S --noconfirm --needed engrampa
-yay -S --noconfirm --needed eww
-yay -S --noconfirm --needed exfat-utils
-yay -S --noconfirm --needed exfatprogs
-yay -S --noconfirm --needed eza
-yay -S --noconfirm --needed fancontrol-gui
-yay -S --noconfirm --needed fastfetch
-yay -S --noconfirm --needed fd
-yay -S --noconfirm --needed ffmpeg
-yay -S --noconfirm --needed ffmpegthumbnailer
-yay -S --noconfirm --needed findutils
-yay -S --noconfirm --needed firefox
-yay -S --noconfirm --needed fish
-yay -S --noconfirm --needed flameshot
-yay -S --noconfirm --needed flatpak
-yay -S --noconfirm --needed fontconfig
-yay -S --noconfirm --needed foomatic-db
-yay -S --noconfirm --needed foomatic-db-engine
-yay -S --noconfirm --needed foot
-yay -S --noconfirm --needed fswatch
-yay -S --noconfirm --needed fuzzel
-yay -S --noconfirm --needed fzf
-yay -S --noconfirm --needed gamemode
-yay -S --noconfirm --needed gamescope
-yay -S --noconfirm --needed gedit
-yay -S --noconfirm --needed geoclue
-yay -S --noconfirm --needed gimp
-yay -S --noconfirm --needed git
-yay -S --noconfirm --needed github-cli
-yay -S --noconfirm --needed github-desktop
-yay -S --noconfirm --needed github-desktop-bi
-yay -S --noconfirm --needed gjs
-yay -S --noconfirm --needed glib2-devel
-yay -S --noconfirm --needed gnome-disk-utility
-yay -S --noconfirm --needed gnome-firmware
-yay -S --noconfirm --needed gnome-keyring
-yay -S --noconfirm --needed gnome-system-monitor
-yay -S --noconfirm --needed gnome-themes-extra
-yay -S --noconfirm --needed go
-yay -S --noconfirm --needed gobject-introspection
-yay -S --noconfirm --needed google-chrome
-yay -S --noconfirm --needed gopsuinfo
-yay -S --noconfirm --needed goverlay
-yay -S --noconfirm --needed gparted
-yay -S --noconfirm --needed granite7
-yay -S --noconfirm --needed greetd
-yay -S --noconfirm --needed grim
-yay -S --noconfirm --needed grub
-yay -S --noconfirm --needed grub-hook
-yay -S --noconfirm --needed grub-theme-vimix
-yay -S --noconfirm --needed gruvbox-dark-icons-gtk
-yay -S --noconfirm --needed gst-libav
-yay -S --noconfirm --needed gst-plugin-pipewire
-yay -S --noconfirm --needed gst-plugin-va
-yay -S --noconfirm --needed gst-plugins-bad
-yay -S --noconfirm --needed gst-plugins-base-libs
-yay -S --noconfirm --needed gst-plugins-ugly
-yay -S --noconfirm --needed gstreamer-meta
-yay -S --noconfirm --needed gtk-engine-murrine
-yay -S --noconfirm --needed gtk-layer-shell
-yay -S --noconfirm --needed gtk-session-lock
-yay -S --noconfirm --needed gtk2
-yay -S --noconfirm --needed gtk3
-yay -S --noconfirm --needed gtk4
-yay -S --noconfirm --needed gtklock
-yay -S --noconfirm --needed gtklock-playerctl-module
-yay -S --noconfirm --needed gtklock-powerbar-module
-yay -S --noconfirm --needed gtklock-userinfo-module
-yay -S --noconfirm --needed gtkmm3
-yay -S --noconfirm --needed gtksourceviewmm
-yay -S --noconfirm --needed gufw
-yay -S --noconfirm --needed gum
-yay -S --noconfirm --needed gvfs
-yay -S --noconfirm --needed gvfs-mtp
-yay -S --noconfirm --needed gvfs-smb
-yay -S --noconfirm --needed handbrake
-yay -S --noconfirm --needed heroic-games-launcher-bin
-yay -S --noconfirm --needed htop
-yay -S --noconfirm --needed hyperv
-yay -S --noconfirm --needed hyprcursor
-yay -S --noconfirm --needed hypridle
-yay -S --noconfirm --needed hyprland
-yay -S --noconfirm --needed hyprland-qt-support
-yay -S --noconfirm --needed hyprland-qtutils
-yay -S --noconfirm --needed hyprlang
-yay -S --noconfirm --needed hyprlock
-yay -S --noconfirm --needed hyprpanel
-yay -S --noconfirm --needed hyprpaper
-yay -S --noconfirm --needed hyprpicker
-yay -S --noconfirm --needed hyprpolkitagent
-yay -S --noconfirm --needed hyprprop-git
-yay -S --noconfirm --needed hyprshade
-yay -S --noconfirm --needed hyprshot
-yay -S --noconfirm --needed hyprsunset
-yay -S --noconfirm --needed hyprutils
-yay -S --noconfirm --needed hyprwayland-scanner
-yay -S --noconfirm --needed imagemagick
-yay -S --noconfirm --needed inkscape
-yay -S --noconfirm --needed inotify-tools
-yay -S --noconfirm --needed intel-ucode
-yay -S --noconfirm --needed intellij-idea-community-edition
-yay -S --noconfirm --needed inxi
-yay -S --noconfirm --needed iwd
-yay -S --noconfirm --needed jq
-yay -S --noconfirm --needed kate
-yay -S --noconfirm --needed kde-material-you-colors
-yay -S --noconfirm --needed kdenlive
-yay -S --noconfirm --needed kdialog
-yay -S --noconfirm --needed keepassxc
-yay -S --noconfirm --needed kitty
-yay -S --noconfirm --needed konsole
-yay -S --noconfirm --needed krita
-yay -S --noconfirm --needed kvantum
-yay -S --noconfirm --needed lact
-yay -S --noconfirm --needed lib32-amdvlk
-yay -S --noconfirm --needed lib32-gamemode
-yay -S --noconfirm --needed lib32-libva-mesa-driver
-yay -S --noconfirm --needed lib32-mangohud
-yay -S --noconfirm --needed lib32-mesa
-yay -S --noconfirm --needed lib32-mesa-vdpau
-yay -S --noconfirm --needed lib32-pipewire
-yay -S --noconfirm --needed lib32-pipewire-jack
-yay -S --noconfirm --needed lib32-vkd3d
-yay -S --noconfirm --needed lib32-vulkan-icd-loader
-yay -S --noconfirm --needed lib32-vulkan-radeon
-yay -S --noconfirm --needed libadwaita
-yay -S --noconfirm --needed libappindicator-gtk3
-yay -S --noconfirm --needed libdbusmenu-gtk3
-yay -S --noconfirm --needed libnma
-yay -S --noconfirm --needed libportal-gtk4
-yay -S --noconfirm --needed libsass
-yay -S --noconfirm --needed libsoup3
-yay -S --noconfirm --needed libspng
-yay -S --noconfirm --needed libva-mesa-driver
-yay -S --noconfirm --needed light
-yay -S --noconfirm --needed linutil
-yay -S --noconfirm --needed linux-firmware
-yay -S --noconfirm --needed linux-lts
-yay -S --noconfirm --needed lm_sensors
-yay -S --noconfirm --needed lmms
-yay -S --noconfirm --needed loguru
-yay -S --noconfirm --needed loupe
-yay -S --noconfirm --needed lsd
-yay -S --noconfirm --needed lutris
-yay -S --noconfirm --needed mako
-yay -S --noconfirm --needed mangohud
-yay -S --noconfirm --needed material-color-utilities
-yay -S --noconfirm --needed materialyoucolor
-yay -S --noconfirm --needed matugen-bin
-yay -S --noconfirm --needed mcfly
-yay -S --noconfirm --needed meld
-yay -S --noconfirm --needed mercurial
-yay -S --noconfirm --needed mesa
-yay -S --noconfirm --needed mesa-vdpau
-yay -S --noconfirm --needed meson
-yay -S --noconfirm --needed micro
-yay -S --noconfirm --needed mkinitcpio-nfs-utils
-yay -S --noconfirm --needed mkinitcpio-numlock
-yay -S --noconfirm --needed mousepad
-yay -S --noconfirm --needed mpc
-yay -S --noconfirm --needed mpd
-yay -S --noconfirm --needed mplayer
-yay -S --noconfirm --needed mpv
-yay -S --noconfirm --needed mpv-mpris
-yay -S --noconfirm --needed mtools
-yay -S --noconfirm --needed multitail
-yay -S --noconfirm --needed nano
-yay -S --noconfirm --needed nano-syntax-highlighting
-yay -S --noconfirm --needed ncdu
-yay -S --noconfirm --needed ncmpcpp
-yay -S --noconfirm --needed neofetch
-yay -S --noconfirm --needed neovim
-yay -S --noconfirm --needed network-manager-applet
-yay -S --noconfirm --needed networkmanager
-yay -S --noconfirm --needed nfs-utils
-yay -S --noconfirm --needed nodejs
-yay -S --noconfirm --needed noto-fonts
-yay -S --noconfirm --needed noto-fonts-cjk
-yay -S --noconfirm --needed noto-fonts-emoji
-yay -S --noconfirm --needed noto-fonts-extra
-yay -S --noconfirm --needed npm
-yay -S --noconfirm --needed ntfs-3g
-yay -S --noconfirm --needed ntp
-yay -S --noconfirm --needed numlockx
-yay -S --noconfirm --needed nvtop
-yay -S --noconfirm --needed nwg-clipman
-yay -S --noconfirm --needed nwg-displays
-yay -S --noconfirm --needed nwg-dock-hyprland
-yay -S --noconfirm --needed nwg-drawer
-yay -S --noconfirm --needed nwg-launchers
-yay -S --noconfirm --needed nwg-look
-yay -S --noconfirm --needed obs-cli
-yay -S --noconfirm --needed octopi
-yay -S --noconfirm --needed oh-my-zsh-git
-yay -S --noconfirm --needed openshot
-yay -S --noconfirm --needed os-prober
-yay -S --noconfirm --needed otf-font-awesome
-yay -S --noconfirm --needed otf-space-grotesk
-yay -S --noconfirm --needed pace
-yay -S --noconfirm --needed pacman-contrib
-yay -S --noconfirm --needed pacseek
-yay -S --noconfirm --needed pamixer
-yay -S --noconfirm --needed papirus-icon-theme
-yay -S --noconfirm --needed papirus-icon-theme-git
-yay -S --noconfirm --needed partitionmanager
-yay -S --noconfirm --needed paru
-yay -S --noconfirm --needed pass
-yay -S --noconfirm --needed pavucontrol
-yay -S --noconfirm --needed pavucontrol-qt
-yay -S --noconfirm --needed pillow
-yay -S --noconfirm --needed pipewire
-yay -S --noconfirm --needed pipewire-alsa
-yay -S --noconfirm --needed pipewire-audio
-yay -S --noconfirm --needed pipewire-jack
-yay -S --noconfirm --needed pipewire-pulse
-yay -S --noconfirm --needed plasma-nm
-yay -S --noconfirm --needed playerctl
-yay -S --noconfirm --needed plymouth
-yay -S --noconfirm --needed polkit-gnome
-yay -S --noconfirm --needed polkit-kde-agent
-yay -S --noconfirm --needed power-profiles-daemon
-yay -S --noconfirm --needed printer-support
-yay -S --noconfirm --needed profile-sync-daemon
-yay -S --noconfirm --needed psutil
-yay -S --noconfirm --needed pv
-yay -S --noconfirm --needed pycairo
-yay -S --noconfirm --needed pychess
-yay -S --noconfirm --needed pygobject
-yay -S --noconfirm --needed python
-yay -S --noconfirm --needed python-dasbus
-yay -S --noconfirm --needed python-docutils
-yay -S --noconfirm --needed python-geographiclib
-yay -S --noconfirm --needed python-geopy
-yay -S --noconfirm --needed python-markdown2
-yay -S --noconfirm --needed python-netifaces
-yay -S --noconfirm --needed python-opencv
-yay -S --noconfirm --needed python-pip
-yay -S --noconfirm --needed python-pyquery
-yay -S --noconfirm --needed python-pywalfox
-yay -S --noconfirm --needed python-requests
-yay -S --noconfirm --needed python-terminaltexteffects
-yay -S --noconfirm --needed python-tkintertools
-yay -S --noconfirm --needed python-watchdog
-yay -S --noconfirm --needed pywal
-yay -S --noconfirm --needed pywayland
-yay -S --noconfirm --needed qalculate-gtk
-yay -S --noconfirm --needed qt5-graphicaleffects
-yay -S --noconfirm --needed qt5-quickcontrols2
-yay -S --noconfirm --needed qt5-svg
-yay -S --noconfirm --needed qt5ct
-yay -S --noconfirm --needed qt6-5compat
-yay -S --noconfirm --needed qt6-avif-image-plugin
-yay -S --noconfirm --needed qt6-base
-yay -S --noconfirm --needed qt6-declarative
-yay -S --noconfirm --needed qt6-imageformats
-yay -S --noconfirm --needed qt6-multimedia
-yay -S --noconfirm --needed qt6-multimedia-ffmpeg
-yay -S --noconfirm --needed qt6-positioning
-yay -S --noconfirm --needed qt6-quicktimeline
-yay -S --noconfirm --needed qt6-sensors
-yay -S --noconfirm --needed qt6-svg
-yay -S --noconfirm --needed qt6-tools
-yay -S --noconfirm --needed qt6-translations
-yay -S --noconfirm --needed qt6-virtualkeyboard
-yay -S --noconfirm --needed qt6-wayland
-yay -S --noconfirm --needed qt6ct
-yay -S --noconfirm --needed quickshell
-yay -S --noconfirm --needed quickshell-git
-yay -S --noconfirm --needed radeon-profile-daemon-git
-yay -S --noconfirm --needed radeon-profile-git
-yay -S --noconfirm --needed radeontop
-yay -S --noconfirm --needed ranger
-yay -S --noconfirm --needed rate-mirrors-bin
-yay -S --noconfirm --needed rawtherapee
-yay -S --noconfirm --needed rclone
-yay -S --noconfirm --needed reflector
-yay -S --noconfirm --needed ripgrep
-yay -S --noconfirm --needed rocm-hip-runtime
-yay -S --noconfirm --needed rocm-opencl-runtime
-yay -S --noconfirm --needed rofi-wayland
-yay -S --noconfirm --needed rog-control-center
-yay -S --noconfirm --needed rosegarden
-yay -S --noconfirm --needed rsync
-yay -S --noconfirm --needed rustup
-yay -S --noconfirm --needed sassc
-yay -S --noconfirm --needed satty
-yay -S --noconfirm --needed screen
-yay -S --noconfirm --needed sddm
-yay -S --noconfirm --needed sddm-sugar-candy-git
-yay -S --noconfirm --needed sddm-sugar-candy-theme
-yay -S --noconfirm --needed seahorse
-yay -S --noconfirm --needed setproctitle
-yay -S --noconfirm --needed setuptools-scm
-yay -S --noconfirm --needed shotwell
-yay -S --noconfirm --needed signal-desktop
-yay -S --noconfirm --needed slurp
-yay -S --noconfirm --needed sof-firmware
-yay -S --noconfirm --needed spicetify-cli
-yay -S --noconfirm --needed spoofdpi
-yay -S --noconfirm --needed spotify
-yay -S --noconfirm --needed spotify-launcher
-yay -S --noconfirm --needed starship
-yay -S --noconfirm --needed steam
-yay -S --noconfirm --needed steam-native
-yay -S --noconfirm --needed steamtinkerlaunch
-yay -S --noconfirm --needed supergfxctl
-yay -S --noconfirm --needed swappy
-yay -S --noconfirm --needed swaybg
-yay -S --noconfirm --needed swayidle
-yay -S --noconfirm --needed swaylock-effects
-yay -S --noconfirm --needed swaync
-yay -S --noconfirm --needed sweet-dark-theme-git
-yay -S --noconfirm --needed swww
-yay -S --noconfirm --needed syntax-highlighting
-yay -S --noconfirm --needed systemsettings
-yay -S --noconfirm --needed teams
-yay -S --noconfirm --needed telegram-desktop
-yay -S --noconfirm --needed tesseract
-yay -S --noconfirm --needed tesseract-data-eng
-yay -S --noconfirm --needed thunar
-yay -S --noconfirm --needed thunar-archive-plugin
-yay -S --noconfirm --needed thunar-media-tags-plugin
-yay -S --noconfirm --needed thunar-shares-plugin
-yay -S --noconfirm --needed thunar-vcs-plugin
-yay -S --noconfirm --needed thunar-volman
-yay -S --noconfirm --needed thunderbird
-yay -S --noconfirm --needed tinyxml2
-yay -S --noconfirm --needed tk
-yay -S --noconfirm --needed tldr
-yay -S --noconfirm --needed tmux
-yay -S --noconfirm --needed tqdm
-yay -S --noconfirm --needed translate-shell
-yay -S --noconfirm --needed trash-cli
-yay -S --noconfirm --needed tree
-yay -S --noconfirm --needed ttf-droid
-yay -S --noconfirm --needed ttf-fantasque-nerd
-yay -S --noconfirm --needed ttf-fira-code
-yay -S --noconfirm --needed ttf-font-awesome
-yay -S --noconfirm --needed ttf-gabarito-git
-yay -S --noconfirm --needed ttf-jetbrains-mono
-yay -S --noconfirm --needed ttf-jetbrains-mono-nerd
-yay -S --noconfirm --needed ttf-liberation
-yay -S --noconfirm --needed ttf-material-symbols-variable-git
-yay -S --noconfirm --needed ttf-meslo-nerd-font-powerlevel10k
-yay -S --noconfirm --needed ttf-nerd-fonts-symbols
-yay -S --noconfirm --needed ttf-readex-pro
-yay -S --noconfirm --needed ttf-rubik-vf
-yay -S --noconfirm --needed ttf-twemoji
-yay -S --noconfirm --needed ttf-victor-mono
-yay -S --noconfirm --needed tumbler
-yay -S --noconfirm --needed typescript
-yay -S --noconfirm --needed udiskie
-yay -S --noconfirm --needed ufw
-yay -S --noconfirm --needed ufw-docker
-yay -S --noconfirm --needed umockdev
-yay -S --noconfirm --needed unace
-yay -S --noconfirm --needed unarchiver
-yay -S --noconfirm --needed unarj
-yay -S --noconfirm --needed unrar
-yay -S --noconfirm --needed unzip
-yay -S --noconfirm --needed update-grub
-yay -S --noconfirm --needed upower
-yay -S --noconfirm --needed util-linux
-yay -S --noconfirm --needed uv
-yay -S --noconfirm --needed viewnior
-yay -S --noconfirm --needed vkbasalt
-yay -S --noconfirm --needed vkd3d
-yay -S --noconfirm --needed vlc
-yay -S --noconfirm --needed vulkan-icd-loader
-yay -S --noconfirm --needed vulkan-mesa-layers
-yay -S --noconfirm --needed vulkan-radeon
-yay -S --noconfirm --needed vulkan-tools
-yay -S --noconfirm --needed walker-bin
-yay -S --noconfirm --needed wallust
-yay -S --noconfirm --needed waybar
-yay -S --noconfirm --needed waybar-module-pacman-updates-git
-yay -S --noconfirm --needed waypaper
-yay -S --noconfirm --needed webcord-bin
-yay -S --noconfirm --needed wf-recorder
-yay -S --noconfirm --needed wget
-yay -S --noconfirm --needed wheel
-yay -S --noconfirm --needed wine-staging
-yay -S --noconfirm --needed winetricks
-yay -S --noconfirm --needed wireplumber
-yay -S --noconfirm --needed wl-clipboard
-yay -S --noconfirm --needed wlogout
-yay -S --noconfirm --needed woff2-font-awesome
-yay -S --noconfirm --needed wofi
-yay -S --noconfirm --needed wtype
-yay -S --noconfirm --needed xarchiver
-yay -S --noconfirm --needed xclip
-yay -S --noconfirm --needed xdg-desktop-portal
-yay -S --noconfirm --needed xdg-desktop-portal-gtk
-yay -S --noconfirm --needed xdg-desktop-portal-hyprland
-yay -S --noconfirm --needed xdg-desktop-portal-kde
-yay -S --noconfirm --needed xdg-user-dirs
-yay -S --noconfirm --needed xdg-utils
-yay -S --noconfirm --needed xf86-video-amdgpu
-yay -S --noconfirm --needed xfce4-terminal
-yay -S --noconfirm --needed xorg-xinit
-yay -S --noconfirm --needed xorg-xinput
-yay -S --noconfirm --needed yad
-yay -S --noconfirm --needed yaru-icon-theme
-yay -S --noconfirm --needed yay-bin
-yay -S --noconfirm --needed yay-bin-debug
-yay -S --noconfirm --needed yazi
-yay -S --noconfirm --needed ydotool
-yay -S --noconfirm --needed yt-dlp
-yay -S --noconfirm --needed zathura
-yay -S --noconfirm --needed zathura-pdf-mupdf
-yay -S --noconfirm --needed zen-browser-bin
-yay -S --noconfirm --needed zoom
-yay -S --noconfirm --needed zram-generator
-yay -S --noconfirm --needed zsh
-yay -S --noconfirm --needed zsh-autocomplete
-yay -S --noconfirm --needed zsh-autosuggestions
-yay -S --noconfirm --needed zsh-completions
-yay -S --noconfirm --needed zsh-syntax-highlighting
-yay -S --noconfirm --needed zsh-theme-powerlevel10k-git
-yay -S --noconfirm --needed bibata-cursor-theme-bin
-yay -S --noconfirm --needed blueman
-yay -S --noconfirm --needed brightnessctl
-yay -S --noconfirm --needed btop
-yay -S --noconfirm --needed checkupdates-with-aur
-yay -S --noconfirm --needed fastfetch
-yay -S --noconfirm --needed ffmpegthumbnailer
-yay -S --noconfirm --needed firefox
-yay -S --noconfirm --needed galculator
-yay -S --noconfirm --needed github-desktop-plus-bin
-yay -S --noconfirm --needed gnome-keyring
-yay -S --noconfirm --needed gvfs
-yay -S --noconfirm --needed hypridle
-yay -S --noconfirm --needed hyprlock
-yay -S --noconfirm --needed hyprpicker
-yay -S --noconfirm --needed hyprshot
-yay -S --noconfirm --needed hyprsunset
-yay -S --noconfirm --needed lsd
-yay -S --noconfirm --needed materia-gtk-theme
-yay -S --noconfirm --needed mpv
-yay -S --noconfirm --needed neovim
-yay -S --noconfirm --needed networkmanager
-yay -S --noconfirm --needed nm-connection-editor
-yay -S --noconfirm --needed noto-fonts
-yay -S --noconfirm --needed noto-fonts-cjk
-yay -S --noconfirm --needed noto-fonts-emoji
-yay -S --noconfirm --needed noto-fonts-extra
-yay -S --noconfirm --needed nwg-look
-yay -S --noconfirm --needed papirus-icon-theme
-yay -S --noconfirm --needed pavucontrol
-yay -S --noconfirm --needed plymouth
-yay -S --noconfirm --needed power-profiles-daemon
-yay -S --noconfirm --needed python-pywal16
-yay -S --noconfirm --needed python-pywalfox
-yay -S --noconfirm --needed qview
-yay -S --noconfirm --needed ripgrep
-yay -S --noconfirm --needed spotify-launcher
-yay -S --noconfirm --needed starship
-yay -S --noconfirm --needed swaync
-yay -S --noconfirm --needed swww
-yay -S --noconfirm --needed tar
-yay -S --noconfirm --needed thefuck
-yay -S --noconfirm --needed thunar
-yay -S --noconfirm --needed ttf-jetbrains-mono-nerd
-yay -S --noconfirm --needed tumbler
-yay -S --noconfirm --needed visual-studio-code-bin
-yay -S --noconfirm --needed waybar
-yay -S --noconfirm --needed waypaper
-yay -S --noconfirm --needed wf-recorder
-yay -S --noconfirm --needed wlogout
-yay -S --noconfirm --needed wofi
-yay -S --noconfirm --needed xdg-desktop-portal-gtk
-yay -S --noconfirm --needed xdg-desktop-portal-hyprland
-yay -S --noconfirm --needed zsh
+
+7zip
+acpi
+adobe-source-code-pro-fonts
+adw-gtk-theme-git
+alacritty
+amd-ucode
+amdgpu-fancontrol-git
+amdvlk
+antimicrox
+appimagelauncher
+arc-gtk-theme
+arch-install-scripts
+archlinux-keyring
+ardour
+ark
+asusctl
+audacious
+audacity
+auto-cpufreq
+autotiling
+axel
+aylurs-gtk-shell
+azote
+base
+base-devel
+bash-completion
+bat
+batsignal
+bc
+bibata-cursor-theme
+bibata-cursor-theme-bin
+blender
+bluedevil
+blueman
+bluez
+bluez-utils
+bootconfig
+brave-bin
+breeze
+breeze-plus
+brightnessctl
+btop
+build
+bzip3
+cachyos-kernel-manager
+cachyos-keyring
+cachyos-mirrorlist
+cachyos-v3-mirrorlist
+cachyos-v4-mirrorlist
+cairomm
+cava
+celluloid
+chaotic-keyring
+chaotic-mirrorlist
+checkupdates-with-aur
+chrony
+clang
+click
+cliphist
+cmake
+cmus
+code
+corectrl
+coreutils
+crudini
+cups
+cups-pdf
+curl
+darkly-bin
+darktable
+ddcutil
+dhcpcd
+dialog
+digikam
+discord
+docker
+docker-compose
+dosfstools
+dracula-grub-theme-git
+dunst
+dxvk-bin
+efibootmgr
+efitools
+engrampa
+eww
+exfat-utils
+exfatprogs
+eza
+fancontrol-gui
+fastfetch
+fd
+ffmpeg
+ffmpegthumbnailer
+figlet
+file-roller
+findutils
+firefox
+fish
+flameshot
+flatpak
+fontconfig
+foomatic-db
+foomatic-db-engine
+foot
+fswatch
+fuse2fs
+fuzzel
+fzf
+galculator
+gamemode
+gamescope
+gdb
+gedit
+geoclue
+gimp
+git
+github-cli
+github-desktop
+github-desktop-bi
+github-desktop-plus-bin
+gjs
+glib2-devel
+gnome-disk-utility
+gnome-firmware
+gnome-keyring
+gnome-system-monitor
+gnome-themes-extra
+go
+gobject-introspection
+google-chrome
+gopsuinfo
+goverlay
+gparted
+granite7
+greetd
+grim
+grimblast-git
+grub
+grub-hook
+grub-theme-vimix
+gruvbox-dark-icons-gtk
+gst-libav
+gst-plugin-pipewire
+gst-plugin-va
+gst-plugins-bad
+gst-plugins-base-libs
+gst-plugins-ugly
+gstreamer-meta
+gtk-engine-murrine
+gtk-layer-shell
+gtk-session-lock
+gtk2
+gtk3
+gtk4
+gtklock
+gtklock-playerctl-module
+gtklock-powerbar-module
+gtklock-userinfo-module
+gtkmm3
+gtksourceviewmm
+gufw
+gum
+gvfs
+gvfs-mtp
+gvfs-smb
+gwenview
+handbrake
+helvum
+heroic-games-launcher-bin
+hplip
+hsetroot
+htop
+hugin
+hyperv
+hyprcursor
+hypridle
+hyprland
+hyprland-qt-support
+hyprland-qtutils
+hyprlang
+hyprlock
+hyprpanel
+hyprpaper
+hyprpicker
+hyprpolkitagent
+hyprprop-git
+hyprshade
+hyprshot
+hyprsunset
+hyprutils
+hyprwayland-scanner
+imagemagick
+inkscape
+inotify-tools
+intel-ucode
+intellij-idea-community-edition
+inxi
+iwd
+jq
+kate
+kde-material-you-colors
+kdenlive
+kdialog
+keepassxc
+kitty
+konsole
+krita
+kvantum
+kvantum-qt5
+lact
+less
+lib32-amdvlk
+lib32-gamemode
+lib32-libva-mesa-driver
+lib32-mangohud
+lib32-mesa
+lib32-mesa-vdpau
+lib32-pipewire
+lib32-pipewire-jack
+lib32-vkd3d
+lib32-vulkan-icd-loader
+lib32-vulkan-radeon
+libadwaita
+libappindicator-gtk3
+libdbusmenu-gtk3
+libnma
+libportal-gtk4
+libsass
+libsoup3
+libspng
+libva-mesa-driver
+light
+linutil
+linux-cachyos-lts
+linux-cachyos-lts-headers
+linux-firmware
+linux-lts
+lm_sensors
+lmms
+loguru
+loupe
+lsd
+lutris
+lxappearance
+mako
+mangohud
+materia-gtk-theme
+material-color-utilities
+materialyoucolor
+matugen-bin
+mcfly
+meld
+mercurial
+mesa
+mesa-vdpau
+meson
+micro
+mkinitcpio-nfs-utils
+mkinitcpio-numlock
+mousepad
+mpc
+mpd
+mplayer
+mpv
+mpv-mpris
+mtools
+multitail
+nano
+nano-syntax-highlighting
+ncdu
+ncmpcpp
+nemo
+nemo-fileroller
+neofetch
+neovim
+network-manager-applet
+networkmanager
+nfs-utils
+nm-connection-editor
+nodejs
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+npm
+ntfix-git
+ntfs-3g
+ntfsfixboot
+ntp
+numlockx
+nvtop
+nwg-clipman
+nwg-displays
+nwg-dock
+nwg-dock-hyprland
+nwg-drawer
+nwg-launchers
+nwg-look
+obs-cli
+octopi
+oh-my-zsh-git
+okular
+openshot
+os-prober
+otf-font-awesome
+otf-space-grotesk
+pace
+pacman-contrib
+pacseek
+pamixer
+papirus-icon-theme
+papirus-icon-theme-git
+parallel
+partitionmanager
+paru
+pass
+pavucontrol
+pavucontrol-qt
+pillow
+pipewire
+pipewire-alsa
+pipewire-audio
+pipewire-jack
+pipewire-pulse
+plasma-nm
+playerctl
+plymouth
+plymouth-theme-arch-charge
+polkit-gnome
+polkit-kde-agent
+power-profiles-daemon
+printer-support
+profile-sync-daemon
+proton-ge-custom-bin
+psutil
+pv
+pycairo
+pychess
+pygobject
+pyprland
+python
+python-dasbus
+python-docutils
+python-geographiclib
+python-geopy
+python-markdown2
+python-netifaces
+python-opencv
+python-pip
+python-pyquery
+python-pywal16
+python-pywalfox
+python-requests
+python-terminaltexteffects
+python-tkintertools
+python-watchdog
+pywal
+pywayland
+qalculate-gtk
+qt5-graphicaleffects
+qt5-quickcontrols2
+qt5-svg
+qt5ct
+qt6-5compat
+qt6-avif-image-plugin
+qt6-base
+qt6-declarative
+qt6-imageformats
+qt6-multimedia
+qt6-multimedia-ffmpeg
+qt6-positioning
+qt6-quicktimeline
+qt6-sensors
+qt6-svg
+qt6-tools
+qt6-translations
+qt6-virtualkeyboard
+qt6-wayland
+qt6ct
+quickshell
+quickshell-git
+qview
+radeon-profile-daemon-git
+radeon-profile-git
+radeontop
+ranger
+rate-mirrors-bin
+rawtherapee
+rclone
+reflector
+ripgrep
+rocm-hip-runtime
+rocm-opencl-runtime
+rofi-bluetooth-git
+rofi-wayland
+rog-control-center
+rosegarden
+rsync
+rustup
+sassc
+satty
+screen
+sddm
+sddm-sugar-candy-git
+sddm-sugar-candy-theme
+seahorse
+setproctitle
+setuptools-scm
+shotwell
+signal-desktop
+simple-scan
+slurp
+sof-firmware
+spicetify-cli
+spoofdpi
+spotify
+spotify-launcher
+starship
+steam
+steam-native
+steamtinkerlaunch
+supergfxctl
+swappy
+swaybg
+swayidle
+swaylock-effects
+swaync
+sweet-dark-theme-git
+swww
+syntax-highlighting
+systemsettings
+tar
+teams
+telegram-desktop
+tesseract
+tesseract-data-eng
+thefuck
+thermald
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-shares-plugin
+thunar-vcs-plugin
+thunar-volman
+thunderbird
+tinyxml2
+tk
+tldr
+tmux
+tokyonight-gtk-theme-git
+tqdm
+translate-shell
+trash-cli
+tree
+ttf-cascadia-code-nerd
+ttf-dejavu
+ttf-droid
+ttf-fantasque-nerd
+ttf-fira-code
+ttf-font-awesome
+ttf-gabarito-git
+ttf-jetbrains-mono
+ttf-jetbrains-mono-nerd
+ttf-liberation
+ttf-material-symbols-variable-git
+ttf-meslo-nerd
+ttf-meslo-nerd-font-powerlevel10k
+ttf-nerd-fonts-symbols
+ttf-readex-pro
+ttf-rubik-vf
+ttf-twemoji
+ttf-victor-mono
+tty-clock
+tumbler
+typescript
+udiskie
+ufw
+ufw-docker
+umockdev
+unace
+unarchiver
+unarj
+unrar
+unzip
+update-grub
+upower
+util-linux
+uv
+valgrind
+viewnior
+visual-studio-code-bin
+vkbasalt
+vkd3d
+vlc
+vulkan-icd-loader
+vulkan-mesa-layers
+vulkan-radeon
+vulkan-tools
+walker-bin
+wallust
+waybar
+waybar-module-pacman-updates-git
+waypaper
+webcord-bin
+wf-recorder
+wget
+wheel
+wine-staging
+winetricks
+wireplumber
+wl-clipboard
+wlogout
+woff2-font-awesome
+wofi
+wtype
+xarchiver
+xclip
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-kde
+xdg-user-dirs
+xdg-utils
+xf86-video-amdgpu
+xfce4-terminal
+xorg-xinit
+xorg-xinput
+yad
+yaru-icon-theme
+yay-bin
+yay-bin-debug
+yazi
+ydotool
+yt-dlp
+zathura
+zathura-pdf-mupdf
+zen-browser-bin
+zip
+zoom
+zoxide
+zram-generator
+zsh
+zsh-autocomplete
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
+zsh-theme-powerlevel10k-git
 flatpak install flathub app.drey.Warp com.github.Matoking.protontricks com.heroicgameslauncher.hgl com.obsproject.Studio com.rtosta.zapzap com.vivaldi.Vivaldi com.vysp3r.ProtonPlus im.riot.Riot io.github.Faugus.faugus-launcher io.github.fastrizwaan.WineZGUI me.proton.Pass net.davidotek.pupgui2 org.dupot.easyflatpak org.gnome.FileRoller org.gnome.Loupe org.gnome.TextEditor org.telegram.desktop --assumeyes  --or-update --system
 
 sudo pacman -Syu && sudo pacman -Scc && fc-cache -fv
