@@ -1,4 +1,5 @@
 
+
 7zip
 acpi
 adobe-source-code-pro-fonts
@@ -7,6 +8,7 @@ alacritty
 amd-ucode
 amdgpu-fancontrol-git
 amdvlk
+ananicy
 antimicrox
 appimagelauncher
 arc-gtk-theme
@@ -29,25 +31,19 @@ bat
 batsignal
 bc
 bibata-cursor-theme
-bibata-cursor-theme-bin
 blender
 bluedevil
 blueman
+blueman-git
 bluez
 bluez-utils
 bootconfig
 brave-bin
-breeze
 breeze-plus
 brightnessctl
 btop
 build
 bzip3
-cachyos-kernel-manager
-cachyos-keyring
-cachyos-mirrorlist
-cachyos-v3-mirrorlist
-cachyos-v4-mirrorlist
 cairomm
 cava
 celluloid
@@ -63,12 +59,14 @@ cmus
 code
 corectrl
 coreutils
+cpio
 crudini
 cups
 cups-pdf
 curl
 darkly-bin
 darktable
+dart-sass
 ddcutil
 dhcpcd
 dialog
@@ -83,6 +81,7 @@ dxvk-bin
 efibootmgr
 efitools
 engrampa
+evremap-git
 eww
 exfat-utils
 exfatprogs
@@ -107,17 +106,17 @@ fswatch
 fuse2fs
 fuzzel
 fzf
+fzf-tab-git
+g++
 galculator
 gamemode
 gamescope
+gcc
 gdb
 gedit
 geoclue
 gimp
 git
-github-cli
-github-desktop
-github-desktop-bi
 github-desktop-plus-bin
 gjs
 glib2-devel
@@ -167,7 +166,6 @@ gvfs-smb
 gwenview
 handbrake
 helvum
-heroic-games-launcher-bin
 hplip
 hsetroot
 htop
@@ -209,6 +207,7 @@ krita
 kvantum
 kvantum-qt5
 lact
+legcord
 less
 lib32-amdvlk
 lib32-gamemode
@@ -232,13 +231,12 @@ libspng
 libva-mesa-driver
 light
 linutil
-linux-cachyos-lts
-linux-cachyos-lts-headers
-linux-firmware
-linux-lts
+linux-zen
+linux-zen-headers
 lm_sensors
 lmms
 loguru
+lolcat
 loupe
 lsd
 lutris
@@ -292,7 +290,6 @@ numlockx
 nvtop
 nwg-clipman
 nwg-displays
-nwg-dock
 nwg-dock-hyprland
 nwg-drawer
 nwg-launchers
@@ -305,6 +302,7 @@ openshot
 os-prober
 otf-font-awesome
 otf-space-grotesk
+p7zip
 pace
 pacman-contrib
 pacseek
@@ -317,12 +315,14 @@ paru
 pass
 pavucontrol
 pavucontrol-qt
+phinger-cursors
 pillow
 pipewire
 pipewire-alsa
 pipewire-audio
 pipewire-jack
 pipewire-pulse
+pkg-config
 plasma-nm
 playerctl
 plymouth
@@ -330,6 +330,7 @@ plymouth-theme-arch-charge
 polkit-gnome
 polkit-kde-agent
 power-profiles-daemon
+preload
 printer-support
 profile-sync-daemon
 proton-ge-custom-bin
@@ -340,6 +341,7 @@ pychess
 pygobject
 pyprland
 python
+python-colorthief
 python-dasbus
 python-docutils
 python-geographiclib
@@ -349,12 +351,15 @@ python-netifaces
 python-opencv
 python-pip
 python-pyquery
+python-pywal
 python-pywal16
 python-pywalfox
 python-requests
+python-setuptools
 python-terminaltexteffects
 python-tkintertools
 python-watchdog
+python2-bin
 pywal
 pywayland
 qalculate-gtk
@@ -379,7 +384,6 @@ qt6-virtualkeyboard
 qt6-wayland
 qt6ct
 quickshell
-quickshell-git
 qview
 radeon-profile-daemon-git
 radeon-profile-git
@@ -403,7 +407,6 @@ satty
 screen
 sddm
 sddm-sugar-candy-git
-sddm-sugar-candy-theme
 seahorse
 setproctitle
 setuptools-scm
@@ -411,10 +414,10 @@ shotwell
 signal-desktop
 simple-scan
 slurp
+socat
 sof-firmware
 spicetify-cli
 spoofdpi
-spotify
 spotify-launcher
 starship
 steam
@@ -424,6 +427,7 @@ supergfxctl
 swappy
 swaybg
 swayidle
+swayimg
 swaylock-effects
 swaync
 sweet-dark-theme-git
@@ -435,6 +439,7 @@ teams
 telegram-desktop
 tesseract
 tesseract-data-eng
+tgpt-git
 thefuck
 thermald
 thunar
@@ -506,6 +511,8 @@ webcord-bin
 wf-recorder
 wget
 wheel
+where-is-my-sddm-theme-git
+whitesur-gtk-theme
 wine-staging
 winetricks
 wireplumber
@@ -541,11 +548,14 @@ zoom
 zoxide
 zram-generator
 zsh
+zsh-auto-notify
 zsh-autocomplete
 zsh-autosuggestions
 zsh-completions
+zsh-history-substring-search
+zsh-sudo-git
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k-git
-flatpak install flathub app.drey.Warp com.github.Matoking.protontricks com.heroicgameslauncher.hgl com.obsproject.Studio com.rtosta.zapzap com.vivaldi.Vivaldi com.vysp3r.ProtonPlus im.riot.Riot io.github.Faugus.faugus-launcher io.github.fastrizwaan.WineZGUI me.proton.Pass net.davidotek.pupgui2 org.dupot.easyflatpak org.gnome.FileRoller org.gnome.Loupe org.gnome.TextEditor org.telegram.desktop --assumeyes  --or-update --system
+flatpak install flathub app.drey.Warp com.github.Matoking.protontricks com.heroicgameslauncher.hgl com.obsproject.Studio com.rtosta.zapzap com.vivaldi.Vivaldi com.vysp3r.ProtonPlus im.riot.Riot io.github.Faugus.faugus-launcher io.github.fastrizwaan.WineZGUI me.proton.Pass net.davidotek.pupgui2 org.dupot.easyflatpak org.gnome.Loupe  --assumeyes  --or-update --system
 
 sudo pacman -Syu && sudo pacman -Scc && fc-cache -fv
