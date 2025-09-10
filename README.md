@@ -35,12 +35,17 @@
 # Clone repo
   git clone https://github.com/Crowdrocker/WehttamSnaps-dotfiles.git ~/Dotfiles
   cd ~/Dotfiles
-
+./install.sh
 # Run setup
+```
 
-  ./install.sh
+Note
 
-# Reboot and enjoy!
+Direct Installation
+You can now easily install the config directly without cloning the repository. Just copy and paste the command bellow in your terminal and run it. Before that, make sure to install curl. Install it using pacman, dnf or zypper.
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/Crowdrocker/hyprconf-install/refs/heads/main/direct_run.sh)
 ```
 
 > 💡 **Note**: This script assumes a fresh Arch install with `yay` or `paru` installed.
