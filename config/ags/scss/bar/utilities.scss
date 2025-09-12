@@ -1,0 +1,36 @@
+.bar-right {
+  .system-tray {
+    border-radius: 10px;
+    padding: 0px;
+    button {
+      border-radius: 0px;
+    }
+    button:first-child {
+      border-radius: 10px 0px 0px 10px;
+    }
+    button:last-child {
+      border-radius: 0px 10px 10px 0px;
+    }
+    button:only-child {
+      border-radius: 10px;
+    }
+  }
+}
+
+.battery {
+  .details {
+    padding: 0px 5px;
+  }
+
+  levelbar > * {
+    min-height: 1px;
+    margin: 5px;
+  }
+
+  .charging {
+    background: $green;
+  }
+  .low {
+    background: $red;
+  }
+}
