@@ -1,6 +1,6 @@
 
 # WehttamSnaps Dotfiles 🎮📸
-
+## 🔥❗️ WARNING: ❗️ My Dotfiles contains HARDCORE GAMING Magic!🌟
 > **"Capturing Gaming Moments"**  
 > A sleek, modular, and performant **Hyprland setup** for **gamers, streamers, and photographers** — built on Arch Linux with a **violet-to-cyan gradient theme**, inspired by TokyoNight and Sweet themes.
 
