@@ -1,0 +1,11 @@
+[Unit]
+Description=WehttamSnaps Dynamic Fan Control
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/fan-control
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
